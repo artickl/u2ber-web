@@ -129,6 +129,12 @@ function App() {
       </header>
 
       <main className="container">
+        <p>If you are using Telegram, you can simply share a YouTube link with <strong>
+            <a href="https://t.me/your_tube_bot" target="_blank" rel="noopener noreferrer" className="telegram-link">
+              @your_tube_bot
+            </a>
+          </strong> and receive an MP3 file back!</p>
+
         <div className="card">
           <div className="input-group">
             <input
