@@ -129,7 +129,7 @@ function App() {
       </header>
 
       <main className="container">
-        <p>If you are using Telegram, you can simply share a YouTube link with <strong>
+        <p className="telegram">If you are using Telegram, you can simply share a YouTube link with <strong>
             <a href="https://t.me/your_tube_bot" target="_blank" rel="noopener noreferrer" className="telegram-link">
               @your_tube_bot
             </a>
@@ -171,7 +171,7 @@ function App() {
               <option value="mp3">MP3 (Audio)</option>
               <option value="ogg">OGG (Audio)</option>
               <option value="wav">WAV (Audio)</option>
-              <option value="video">Video (MP4)</option>
+              <option value="video">MP4/WebM (Video)</option>
             </select>
           </div>
 
@@ -208,12 +208,12 @@ function App() {
                       <span className="size">{file.size_mb} MB</span>
                     </div>
                     <div className="file-actions">
-                      <a href={file.download_url} download className="btn btn-small">
+                      <a href={file.download_url} download className="btn btn-primary btn-small">
                         ⬇️ Download
                       </a>
                       <button
                         onClick={() => deleteFile(file.filename)}
-                        className="btn btn-small btn-danger"
+                        className="btn btn-danger btn-small"
                       >
                         🗑️ Delete
                       </button>
